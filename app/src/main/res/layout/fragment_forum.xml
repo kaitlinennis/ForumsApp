@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForumFragment" >
+
+    <TextView
+        android:id="@+id/displaySelectedForumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Forum title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displaySelectedForumCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Creator"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/displaySelectedForumTitle"
+        app:layout_constraintTop_toBottomOf="@+id/displaySelectedForumTitle" />
+
+    <TextView
+        android:id="@+id/displaySelectedForumDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/displaySelectedForumCreator"
+        app:layout_constraintTop_toBottomOf="@+id/displaySelectedForumCreator" />
+
+    <TextView
+        android:id="@+id/commentsNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/displaySelectedForumDescription"
+        app:layout_constraintTop_toBottomOf="@+id/displaySelectedForumDescription" />
+
+    <TextView
+        android:id="@+id/commentsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/comments_label"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentsNum"
+        app:layout_constraintStart_toEndOf="@+id/commentsNum" />
+
+    <EditText
+        android:id="@+id/editTextWriteComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/write_comment_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/postCommentButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentsLabel" />
+
+    <Button
+        android:id="@+id/postCommentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/post_button_label"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextWriteComment"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postCommentButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

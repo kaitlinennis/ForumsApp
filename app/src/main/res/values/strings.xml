@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ennis_HW06</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_new_account_button">Create New Account</string>
+
+    <string name="toast_missing_email_password">Email and Password fields are missing.</string>
+    <string name="toast_missing_email">Email field is missing.</string>
+    <string name="toast_missing_password">Password field is missing.</string>
+    <string name="logout_button">Logout</string>
+    <string name="new_forum_button">New Forum</string>
+    <string name="toast_missing_email_password_name">Name, Email, and Password fields are missing.</string>
+    <string name="toast_missing_email_name">Email and Name fields are missing.</string>
+    <string name="toast_missing_password_name">Password and Name fields are missing.</string>
+    <string name="toast_missing_name">Name field is missing.</string>
+    <string name="toast_missing_forum_title_description">Forum title and description are missing.</string>
+    <string name="toast_missing_forum_title">Forum title is missing.</string>
+    <string name="toast_missing_forum_description">Forum description is missing.</string>
+    <string name="hint_name">Name</string>
+    <string name="submit_register_button">Submit</string>
+    <string name="cancel_register_button">Cancel</string>
+    <string name="hint_forum_title">Forum Title</string>
+    <string name="hint_forum_description">Forum Description</string>
+    <string name="comments_label">Comments</string>
+    <string name="write_comment_hint">Write Comment</string>
+    <string name="post_button_label">Post</string>
+    <string name="comment_toast">Must enter a comment</string>
+    <string name="likes_label">Likes | </string>
+    <string name="delete_forum_toast">Cannot delete a forum you did not create</string>
+</resources>

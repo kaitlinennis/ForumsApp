@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".CreateForumFragment" >
+
+    <EditText
+        android:id="@+id/createForumTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_forum_title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createForumDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/hint_forum_description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/createForumTitle"
+        app:layout_constraintStart_toStartOf="@+id/createForumTitle"
+        app:layout_constraintTop_toBottomOf="@+id/createForumTitle" />
+
+    <Button
+        android:id="@+id/submitCreateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/submit_register_button"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/createForumDescription"
+        app:layout_constraintStart_toStartOf="@+id/createForumDescription"
+        app:layout_constraintTop_toBottomOf="@+id/createForumDescription" />
+
+    <Button
+        android:id="@+id/cancelCreateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cancel_register_button"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/submitCreateButton"
+        app:layout_constraintTop_toBottomOf="@+id/submitCreateButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

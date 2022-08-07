@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/displayForumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Forum title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayForumCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Forum creator"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/displayForumTitle"
+        app:layout_constraintTop_toBottomOf="@+id/displayForumTitle" />
+
+    <TextView
+        android:id="@+id/displayForumDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Forum description"
+        app:layout_constraintStart_toStartOf="@+id/displayForumCreator"
+        app:layout_constraintTop_toBottomOf="@+id/displayForumCreator" />
+
+    <TextView
+        android:id="@+id/displayDateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Date created"
+        app:layout_constraintBottom_toBottomOf="@+id/likesLabel"
+        app:layout_constraintEnd_toStartOf="@+id/deleteImageButton"
+        app:layout_constraintStart_toEndOf="@+id/likesLabel" />
+
+    <ImageButton
+        android:id="@+id/deleteImageButton"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/displayDateCreated"
+        app:layout_constraintEnd_toStartOf="@+id/likeUnlikeImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/displayForumDescription"
+        app:srcCompat="@drawable/rubbish_bin" />
+
+    <ImageButton
+        android:id="@+id/likeUnlikeImageButton"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/deleteImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/like_not_favorite" />
+
+    <TextView
+        android:id="@+id/numLikesPerForum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/displayForumDescription"
+        app:layout_constraintTop_toBottomOf="@+id/displayForumDescription" />
+
+    <TextView
+        android:id="@+id/likesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/likes_label"
+        app:layout_constraintBottom_toBottomOf="@+id/numLikesPerForum"
+        app:layout_constraintStart_toEndOf="@+id/numLikesPerForum" />
+</androidx.constraintlayout.widget.ConstraintLayout>
