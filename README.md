@@ -7,3 +7,4 @@ as well as post comments on a specific forum for others to read.
 Tools used: Android Studio (Java), Firebase & Firestore
 
 ![Capture](https://user-images.githubusercontent.com/67982037/216435319-c5c079ba-d222-40e0-a7f1-2c25c0a9b621.PNG)
+![Capture](https://user-images.githubusercontent.com/67982037/216435668-683a00a7-7e43-4723-a4a7-cba00219528e.PNG)
